@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .page {
+            width: 100vw;
+            height: 100vh;
+            padding-left: 420px;
+            background: url(imgs/ft_e43a6db.jpg);
+        }
+        .page div {
+            margin:350px 0;
+            float: left;
+            width: 200px;
+            height: 180px;
+            animation: walk 2s steps(8) infinite;
+        }
+        .page div:first-child {
+            background: url(imgs/west_01_3ca39fe.png) no-repeat;
+            
+        }
+        .page div:nth-child(2) {
+            background: url(imgs/west_02_47bad19.png) no-repeat;
+        } 
+        .page div:nth-child(3) { 
+            width: 170px;
+            height: 240px;
+            margin-top: 320px;
+            background: url(imgs/west_03_f962447.png) no-repeat;
+            animation: walk2 2s steps(8) infinite;
+        } 
+        .page div:last-child { 
+            width: 210px;
+            background: url(imgs/west_04_6516d80.png) no-repeat;
+            animation: walk3 2s steps(8) infinite;
+        }
+        @keyframes walk {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -1600px 0;
+            }
+        }
+        @keyframes walk2 {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -1360px 0;
+            }
+        }
+
+        @keyframes walk3 {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -1680px 0;
+            }
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+  
+</body>
+
+</html>
